@@ -11,6 +11,13 @@ En el repositorio se adjunta un CSV con pokemons previamente cargados para envia
 
 Lee un archivo csv proporcionado por el usuario y los añade a un diccionario de datos don los pokemons correspondientes.
 
+## NOTA IMPORTANTE
+
+El archivo **SIEMPRE** debe contener los siguientes encabezados:
+
+| Nombre     | Nivel | Tipo      |
+|------------|-------|-----------|
+
 Expuesto en: 
 **Link:** https://avlpokemontree.onrender.com/upload
 **Metodo:** [POST]
@@ -27,9 +34,6 @@ El formato del csv es el siguiente:
 | Charmander | 5     | Fuego     |
 | Bulbasaur  | 5     | Planta    |
 
-Manteniendo el encabezado 
-| Nombre     | Nivel | Tipo      |
-|------------|-------|-----------|
 
 El balanceo del arbol AVL se realizara en base al orden alfabetico de los pokemons
 
