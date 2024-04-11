@@ -1,6 +1,12 @@
 
 ## Métodos para el uso de la api
 
+
+# NOTA IMPORTANTE
+Si es la primera vez que usas el api, por limitaciones del servidor de **RENDER** la api estara apagada por inactividad 50 segundos, por lo que la primera vez que se use puede tomar hasta **1 minuto** en responde el  api, se recomienda que para el primer uso se ejecute el metodo /upload para cargar el diccionario con pokemons.
+
+En el repositorio se adjunta un CSV con pokemons previamente cargados para enviarselo al metodo.
+
 ### `[POST] /Upload`
 
 Lee un archivo csv proporcionado por el usuario y los añade a un diccionario de datos don los pokemons correspondientes.
@@ -30,6 +36,9 @@ El balanceo del arbol AVL se realizara en base al orden alfabetico de los pokemo
 -   **Parámetros:**
     
     -   `file`:  Sera el archivo csv que contendra los pokemons a agregar
+
+Cargar CSV de la siguiente forma:
+![LLenar lcsv](/images/uploadMethod.png)
 
 ### curl
   
@@ -68,6 +77,9 @@ curl --location 'https://avlpokemontree.onrender.com/upload' \
 ### `[GET] /search?name={PkmName}`
 Este metodo se utiliza para buscar un pokemon en especifico por su nombre dentro del arbol AVL
 
+Expuesto en: 
+**Link:** https://avlpokemontree.onrender.com/search?name=pikachu
+
 -   **Parámetros:**
 `PkmnName:`  Es el nombre del pokemon a buscar dentro del listado este se pasa por **PATHPARAM**
 
@@ -92,6 +104,10 @@ curl --location 'https://avlpokemontree.onrender.com/search?name=pikachu'
 ### `[GET] /pokemons`
 
 Obtiene un listado de todos los Pokémon's cargados al diccionario
+
+Expuesto en: 
+**Link:** https://avlpokemontree.onrender.com/pokemons
+
 ### curl
   
 ```bash 
@@ -129,7 +145,7 @@ curl --location 'https://avlpokemontree.onrender.com/pokemons'
 Este metodo sirve para añadir pokemons al diccionario y al arbol AVL
 
 Expuesto en: 
-**Link:** https://avlpokemontree.onrender.com/add_pokemon
+**Link:** https://avlpokemontree.onrender.com/pokemon
 **Metodo:** [POST]
 **Body postman:** 
 - **Type:** Json
