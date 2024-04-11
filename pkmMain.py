@@ -53,7 +53,7 @@ def search_pokemon():
     else:
         return jsonify({'mensaje': 'Pokémon no encontrado'}), 404
 
-@app.route('/add_pokemon', methods=['POST'])
+@app.route('/pokemon', methods=['POST'])
 def add_pokemon():
     # Asegurarse de que la solicitud contenga un JSON
     if not request.is_json:
