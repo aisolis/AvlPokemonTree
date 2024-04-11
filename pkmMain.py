@@ -90,5 +90,17 @@ def get_pokemons():
     return jsonify(AVLTree.pokemons_data)
 
 
+@app.route('/integrantes', methods=['GET'])
+def get_textos():
+    integrantes = {
+        'Cristhian Sebastián Rodas Arriola': '9490-22-523',
+        'Abner salvador Cancinos Cabrera': '9490-22-2101',
+        'Alder Isaac Solis De Leon': '9490-22-227',
+        'Angel Emilio Mendez Muralles' : '9490-22-5851',
+        'Joshua Ivan Andree Mendez Vasquez' : '9490-22-4032'
+
+    }
+    return jsonify(integrantes), 200
+
 if __name__ == '__main__':
     app.run(host='0.0.0.0' , port=8080)

@@ -7,6 +7,30 @@ Si es la primera vez que usas el api, por limitaciones del servidor de **RENDER*
 
 En el repositorio se adjunta un CSV con pokemons previamente cargados para enviarselo al metodo.
 
+
+### `[GET] /integrantes`
+
+Retorna un JSON con los integrantes del grupo.
+
+### curl
+  
+```bash 
+curl --location 'https://avlpokemontree.onrender.com/integrantes'
+```
+![LLenar lista de pokemones](/images/integrantes.PNG)
+
+### Output
+```json
+{
+    "Abner salvador Cancinos Cabrera": "9490-22-2101",
+    "Alder Isaac Solis De Leon": "9490-22-227",
+    "Angel Emilio Mendez Muralles": "9490-22-5851",
+    "Cristhian Sebastián Rodas Arriola": "9490-22-523",
+    "Joshua Ivan Andree Mendez Vasquez": "9490-22-4032"
+}
+```
+
+
 ### `[POST] /Upload`
 
 Lee un archivo csv proporcionado por el usuario y los añade a un diccionario de datos don los pokemons correspondientes.
