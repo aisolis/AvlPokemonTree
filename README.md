@@ -13,10 +13,12 @@ Lee un archivo csv proporcionado por el usuario y los añade a un diccionario de
 
 ## NOTA IMPORTANTE
 
-El archivo **SIEMPRE** debe contener los siguientes encabezados:
+El archivo **SIEMPRE** debe contener los siguientes encabezados y debe ir delimitado por **;** ya que asi esta mapeado en el servicio:
 
 | Nombre     | Nivel | Tipo      |
 |------------|-------|-----------|
+
+
 
 Expuesto en: 
 **Link:** https://avlpokemontree.onrender.com/upload
